@@ -1,21 +1,6 @@
+
 <input type="number" id="number">
-<button onClick="check">Try</button>
+<button onClick="check()">Try</button>
 <p id="result"></p>
 
-<script>
-    var number;
-    window.onload = generateNumber();
-
-    function generateNumber() {
-        number = Math.floor(Math.random() * 10);
-    }
-
-    function check() {
-        var input = document.getElementById("number").nodeValue;
-
-        if (number == input) {
-            document.getElementById("result").innerHTML = "You are right it is: " + number
-        }
-        
-    }
-</script>
+<script type="text/javascript" src="generate.js"></script>
